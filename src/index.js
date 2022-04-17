@@ -1,9 +1,11 @@
 import React from 'react';
+import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 
-const Square = ({ value }) => {
-    return <button className="square" onClick={function () { console.log('click'); }}>{value}</button>;
+const Square = () => {
+    const [value, setValue] = useState("");
+    return <button className="square" onClick = {() => { setValue('X') }}>{value}</button>;
 };
 
 const Board = () => {
