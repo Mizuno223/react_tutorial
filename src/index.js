@@ -39,10 +39,14 @@ const Board = () => {
                 return squares[a];
             }
         }
-        // lines.forEach((line) => {
+        // lines.some((line) => {
         //     const [a, b, c] = line;
+        //     console.log([a, b, c]);
         //     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        //         console.log(squares[a]);
         //         return squares[a];
+        //     } else {
+        //         return null;
         //     }
         // });
         return null;
